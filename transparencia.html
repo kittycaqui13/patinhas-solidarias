@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patinhas Solidárias | Transparência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: { 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' },
+                        orange: { 500: '#f97316', 600: '#ea580c' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gradient-to-tr from-orange-600 to-green-700 rounded-2xl flex items-center justify-center text-white shadow-md">
+                    <i class="fa-solid fa-paw text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold bg-gradient-to-r from-green-800 to-orange-600 bg-clip-text text-transparent">Patinhas</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-stone-600">
+                <a href="index.html" class="hover:text-orange-600 transition">Início</a>
+                <a href="adocao.html" class="hover:text-orange-600 transition">Adoção</a>
+                <a href="doacoes.html" class="hover:text-orange-600 transition">Doações</a>
+                <a href="transparencia.html" class="text-orange-600">Transparência</a>
+                <a href="ongs.html" class="hover:text-orange-600 transition">ONGs Parceiras</a>
+            </nav>
+            <a href="doacoes.html" class="bg-orange-600 hover:bg-orange-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">Doar Agora</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO TRANSPARÊNCIA -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-green-900">Prestação de Contas</h1>
+            <p class="text-stone-600 mt-2">Transparência total no uso dos recursos doados pela comunidade.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-8 rounded-3xl shadow border border-stone-200 text-center">
+                <i class="fa-solid fa-bowl-food text-orange-600 text-3xl mb-4"></i>
+                <h3 class="font-bold text-xl text-stone-900">45% Ração e Insumos</h3>
+                <p class="text-stone-600 text-sm mt-2">Alimentação diária garantida para abrigos parceiros.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow border border-stone-200 text-center">
+                <i class="fa-solid fa-stethoscope text-green-800 text-3xl mb-4"></i>
+                <h3 class="font-bold text-xl text-stone-900">40% Atendimento Clínico</h3>
+                <p class="text-stone-600 text-sm mt-2">Castrações, cirurgias e vacinas essenciais.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow border border-stone-200 text-center">
+                <h3 class="font-bold text-xl text-stone-900">15% Infraestrutura</h3>
+                <p class="text-stone-600 text-sm mt-2">Reformas de baias e manutenção de abrigos.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
